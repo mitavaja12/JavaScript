@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1727892207300,
+      "title": "shirt",
+      "price": "100",
+      "category": "men",
+      "img": "https://fullyfilmy.in/cdn/shop/products/New-Mockups---no-hanger---TShirt-Written-and-Directed-by-chennai.jpg?v=1662807782"
+    },
+    {
+      "id": 1727892293895,
+      "title": "dress",
+      "price": "1150",
+      "category": "women",
+      "img": "https://fullyfilmy.in/cdn/shop/products/New-Mockups---no-hanger---TShirt-Written-and-Directed-by-chennai.jpg?v=1662807782"
+    },
+    {
+      "id": 1727892536260,
+      "title": "shirt",
+      "price": "10090",
+      "category": "men",
+      "img": "https://fullyfilmy.in/cdn/shop/products/New-Mockups---no-hanger---TShirt-Written-and-Directed-by-chennai.jpg?v=1662807782"
+    }
+  ]
+}

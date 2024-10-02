@@ -1,0 +1,47 @@
+.custom-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+}
+
+body img {
+    height: auto;
+}
+
+#productList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+#productList>div {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+#productList img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+  background-color: #82c4b7; 
+  color: white;
+  border: none; 
+  padding: 10px 20px; 
+  font-size: 16px;
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color:rgba(0, 0, 0, 0.7); 
+}
+

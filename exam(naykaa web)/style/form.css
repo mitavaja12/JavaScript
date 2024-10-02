@@ -1,0 +1,19 @@
+body {
+  background: url('/image/form.png') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.custom-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  margin-bottom: 20%;
+}
+
+body img {
+  height: auto;
+}
