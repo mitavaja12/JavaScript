@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Data</title>
+    <link rel="stylesheet" href="../3 student data/style.css">
+</head>
+
+<body>
+
+    <form id="studentData">
+        <!-- fees -->
+        <select name="fees" id="fee">
+            <option value="fees">Fees</option>
+            <option value="graphics-60000">Graphics-60,000₹</option>
+            <option value="animation-70000">Animation-70,000₹</option>
+            <option value="fullstack-120000">Fullstack-1,20,000₹</option>
+        </select>
+        <!-- name -->
+        <input type="text" id="name" placeholder="Enter your name">
+        <!-- grid -->
+        <input type="number" id="gr" placeholder="Enter GR id">
+        <!-- course -->
+        <select name="course" id="course">
+            <option value="choose course">Choose course</option>
+            <option value="graphics">Graphics</option>
+            <option value="animation">Animation</option>
+            <option value="fullstack">Fullstack</option>
+        </select>
+        <!-- phone num -->
+        <input type="number" id="number" placeholder="Enter phone number">
+        <!-- submit -->
+        <input type="submit">
+    </form>
+
+    <table>
+        <tr>
+            <th>Course</th>
+            <th id="totalStudents">Total Students</th>
+            <th id="totalFees">Total Fees</th>
+            <th id="btn">Delete</th>
+        </tr>
+        <tbody id="tbody"></tbody>
+    </table>
+
+    <script src="../3 student data/index.js"></script>
+</body>
+
+</html> 

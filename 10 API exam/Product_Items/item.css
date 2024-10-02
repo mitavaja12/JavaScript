@@ -1,0 +1,124 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#product-details {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+#product-details img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 1s;
+}
+
+#product-details img:hover {
+    transform: scale(1.3);
+}
+
+#product-details h2 {
+    color: #333;
+    margin: 15px 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#product-details p {
+    color: #777;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#product-details p.price {
+    color: #e74c3c;
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#product-details p.rating {
+    color: #f39c12;
+    font-size: 18px;
+}
+
+#product-details p.rating::before {
+    content: '★★★★★';
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #f39c12 calc(var(--rating) * 20%), #ccc calc(var(--rating) * 20%));
+}
+
+#product-details p.discount {
+    color: green;
+    font-weight: bold;
+}
+
+
+#product-details .review-section {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+#product-details .review-section div {
+    text-align: left;
+    width: 50%;
+}
+
+#product-details .review-section div p {
+    margin: 5px 0;
+}
+
+#product-details div.action-button {
+    margin-top: 30px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#product-details div.action-button:hover {
+    background-color: #2980b9;
+}
+
+
+@media (max-width: 768px) {
+    #product-details {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #product-details {
+        width: 100%;
+        padding: 10px;
+    }
+}

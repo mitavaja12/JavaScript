@@ -1,0 +1,257 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; 
+    color: #004d40; 
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff; 
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-out;
+}
+
+.navigation-banner {
+    display: flex;
+    justify-content: center;
+    background-color: #00796b; 
+    color: #ffffff;
+    padding: 15px 0;
+    border-radius: 12px;
+    animation: slideIn 0.6s ease-out;
+}
+
+.navigation-banner a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 20px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.navigation-banner a:hover {
+    background-color: #004d40;
+    color: #ffffff; 
+    transform: scale(1.1);
+}
+
+h1, h2, h3 {
+    color: #004d40;
+    margin: 0 0 20px;
+    font-weight: 700;
+    animation: fadeInUp 1s ease-out;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2.2em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+/* form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #00796b; 
+    animation: fadeInUp 1s ease-out;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="password"],
+textarea {
+    margin-bottom: 20px;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #004d40;
+    border-radius: 8px;
+    background-color: #ffffff; 
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #00796b; 
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 121, 107, 0.3); 
+}
+
+input[type="submit"] {
+    padding: 14px;
+    font-size: 18px;
+    background-color: #00796b; 
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #004d40; 
+    transform: scale(1.05);
+}
+
+/* Layout */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+.user-section {
+    flex: 0 0 30%;
+    padding-right: 20px;
+}
+
+.news-section {
+    flex: 0 0 70%;
+    padding-left: 20px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-image {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
+
+.news-title {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #004d40; 
+}
+
+.news-content {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #00796b;
+}
+
+.news-buttons {
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary {
+    background-color: #00796b; 
+}
+
+.btn-secondary {
+    background-color: #004d40; 
+}
+
+.btn-success {
+    background-color: #4caf50; 
+}
+
+.btn-info {
+    background-color: #0288d1;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .navigation-banner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-container {
+        padding: 20px;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .user-section, .news-section {
+        flex: 1;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .user-section {
+        order: 2;
+    }
+
+    .news-section {
+        order: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.user-profile {
+    border: 1px solid red;
+    background-color: lightgray;
+}

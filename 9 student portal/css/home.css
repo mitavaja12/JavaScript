@@ -1,0 +1,123 @@
+.btn-outline-dark {
+    border-color: #343a40;
+    color: #343a40;
+    border-width: 2px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #003366;
+    color: white;
+    border-color: #343a40;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-dark:active {
+    background-color: #003366;
+    border-color: #212529;
+    color: #fff;
+    box-shadow: none;
+}
+
+.btn-outline-dark:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(52, 58, 64, 0.5);
+}
+
+
+.btn-outline-dark {
+    border-color: #343a40;
+    color: #343a40;
+    border-width: 2px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #003366;
+    color: white;
+    border-color: #343a40;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-dark:active {
+    background-color: #003366;
+    border-color: #212529;
+    color: #fff;
+    box-shadow: none;
+}
+
+.btn-outline-dark:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(52, 58, 64, 0.5);
+}
+
+
+#studentList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+#studentList div {
+    background: linear-gradient(135deg, #f0f0f5, #ffffff);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#studentList div:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15), transparent);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+#studentList div:hover:before {
+    opacity: 1;
+}
+
+#studentList div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#studentList div h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#studentList div p {
+    color: #666;
+    font-size: 1rem;
+}
+
+#studentList div .action-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+#studentList div .action-btn:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cbe43eb8;
+    position: relative;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.main_content_body {
+    display: flex;
+    flex-direction: row;
+    width: 100%; 
+}
+
+.main_sidebar {
+    width: 20%;
+    height: 100vh;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 12px;
+    border-radius: 0 10px 10px 0;
+    margin-top: 10px;
+}
+
+.main_contents { 
+    margin: 0 0 0 auto;
+}
+
+.main_sidebar > p {
+    margin: 0;
+}
+
+.main_sidebar_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#products {
+    width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+#product-list div {
+    border: 3px solid #ffffff;
+    background-color: rgb(247, 247, 247);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    flex: 1 1 calc(33.333% - 40px); 
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#product-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#product-list h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+#product-list p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+@media (max-width: 1200px) {
+    #product-list div {
+        flex: 1 1 calc(50% - 40px); 
+    }
+}
+
+@media (max-width: 768px) {
+    #product-list div {
+        flex: 1 1 calc(100% - 40px); 
+    }
+}
+
+#HTL,
+#LTH,
+#furniture,
+#beauty,
+#fragrances,
+#groceries {
+    cursor: pointer;
+}
