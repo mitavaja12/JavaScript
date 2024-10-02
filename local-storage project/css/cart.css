@@ -1,0 +1,132 @@
+body{
+    background-image: url('https://wallpaperset.com/w/full/6/6/3/134009.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#list img {
+    width: 160px;
+    height: 100px;
+}
+
+#cartList {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: flex-start;
+}
+
+#cartProduct {
+    width: 70%;
+    margin: 30px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px solid white;
+    padding: 25px 20px; 
+    position: relative; 
+    z-index: 1;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+th,
+td {
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+button {
+    margin: 0 5px;
+    padding: 4px 10px;
+    border: none;
+    background-color: #ffc107;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f9d158;
+}
+
+#totalPrice {
+    margin-top: 20px;
+    text-align: right;
+    font-weight: 600;
+}
+
+
+#sidebar {
+    width: 25%;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#sidebar div {
+    margin-bottom: 20px;
+}
+
+#sidebar h5 {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 700;
+}
+
+.opt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.opt input,
+.opt select {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn1 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.btn1:hover {
+    background-color: #333;
+}
+
+#cartTotal {
+    background-color: #ffe0b3;
+    padding: 20px 40px;
+    border-radius: 10px;
+    margin: 20px 30px;
+}
+
+#cartTotal p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    color: #000;
+}
+
+#cartTotal .apply-button {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+}
