@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Code Editor</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Code Editor</h1>
+        <div class="editor">
+            <textarea id="html-code" placeholder="Write HTML code here"></textarea>
+            <textarea id="css-code" placeholder="Write CSS code here"></textarea>
+            <textarea id="js-code" placeholder="Write JavaScript code here"></textarea>
+        </div>
+        <button onclick="runCode()">Run</button>
+        <iframe id="output" class="output"></iframe>
+    </div>
+    
+    <script src="/index.js"></script>
+</body>
+</html>
